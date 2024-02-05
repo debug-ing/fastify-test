@@ -1,0 +1,25 @@
+{
+  "name": "test-fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/main.js",
+    "dev": "nodemon src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "fastify": "^4.26.0",
+    "reflect-metadata": "^0.2.1",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
