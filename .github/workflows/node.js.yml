@@ -33,10 +33,10 @@ jobs:
         run: cd /root/fastify-test && git pull origin main
         
       - name: Install Dependencies ❤️
-        run: cd /root/front/screengram-panel && npm install
+        run: cd /root/fastify-test && npm install
 
       - name: Build the app ⚙️
-        run: cd /root/front/screengram-panel && npm run build
+        run: cd /root/fastify-test && npm run build
         
       - name: reload app in pm2
         run: pm2 reload main
