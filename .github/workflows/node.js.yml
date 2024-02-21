@@ -39,4 +39,4 @@ jobs:
         run: cd /root/fastify-test && npm run build
         
       - name: reload app in pm2
-        run: pm2 reload main
+        run: pm2 delete backend && cd /root/fastify-test && pm2 start dist/main.js --name backend -i 1
